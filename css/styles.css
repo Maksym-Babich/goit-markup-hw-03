@@ -149,7 +149,6 @@ a {
   background-color: var(--foo-bc-color);
   text-align: center;
   padding: 200px 0;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -184,7 +183,8 @@ a {
 /* features styles */
 
 .features {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-list {
@@ -217,7 +217,7 @@ a {
 /* what we do & team styles */
 
 .what-we-do-section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .what-we-do-list {
@@ -367,16 +367,14 @@ a {
 }
 
 .project-conteiner {
-  border: 1px solid #eeeeee;
   width: 370px;
 }
 
-.project-conteiner > a {
-  display: block;
-}
-
 .project-title {
-  margin: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .project-name {
