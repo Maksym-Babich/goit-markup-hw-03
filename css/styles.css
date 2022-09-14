@@ -91,6 +91,12 @@ a {
   display: flex;
 }
 
+.contacts-list > li > a {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .contacts-list > li:not(:last-child) {
   margin-right: 50px;
 }
@@ -189,10 +195,11 @@ a {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-list li {
-  width: 270px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .features-list li:not(:last-child) {
@@ -222,6 +229,11 @@ a {
 
 .what-we-do-list {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.what-we-do-list li {
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .what-we-do-list li:not(:last-child) {
@@ -235,7 +247,11 @@ a {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-list li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .what-we-do-title,
@@ -256,6 +272,7 @@ a {
   background-color: var(--main-bc-color);
   padding-bottom: 30px;
   text-align: center;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .member-photo {
@@ -326,7 +343,7 @@ a {
 /* portfolio styles */
 
 .portfolio-page {
-  margin: 94px 0;
+  padding: 94px 0;
 }
 
 .filter {
@@ -367,7 +384,7 @@ a {
 }
 
 .project-conteiner {
-  width: 370px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .project-title {
